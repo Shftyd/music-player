@@ -1,6 +1,8 @@
 //global variables
 
 void setup() {
+  fullScreen();
+  population();
 }//End setup()
 
 void draw() {

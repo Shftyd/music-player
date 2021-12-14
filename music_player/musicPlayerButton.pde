@@ -1,1 +1,2 @@
-void musicPlayerButton() {}//End musicPlayerButtnons
+void musicPlayerButtons() {
+}//End musicPlayerButtnons
