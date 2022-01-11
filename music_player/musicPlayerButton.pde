@@ -1,7 +1,9 @@
 void musicPlayerButtons() {
   //Power Buttpn, Quit Button
   powerButton();
+  //
   //play-pause
+
   //stop
   //forward & reverse
   //Next
