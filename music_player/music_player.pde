@@ -12,8 +12,12 @@ AudioPlayer song1; //creates "Play List" variab les holding extensions WAV, AIFF
 
 void setup() {
   fullScreen();
-population();
-textSetup();
+  population();
+  textSetup();
+  playPauseSetup();
+  fastForwardSetup();
+  fastForwardSetup();
+  muteSetup();
   //
   minim = new Minim(this);
   song1 = minim.loadFile("music/Minecraft Music 1_12 - Minecraft (calm1.ogg) _MUSIC SELECTION.mp3");
@@ -22,6 +26,10 @@ textSetup();
 
 void draw() {
   powerButtonDraw();
+  playPauseDraw();
+  fastForwardDraw();
+  fastRewindDraw();
+  muteDraw();
 }//End draw()
 
 void keyPressed() {
@@ -29,14 +37,21 @@ void keyPressed() {
 
 void mousePressed() {
   powerButtonMousePressed();
+  playPauseMousePressed();
+  fastForwardMousePressed();
+  fastRewindMousePressed();
+  muteMousePressed();
+  //playpause
   if (mousePressed) {
     if (song1.isPlaying() ) {
       song1.pause();
-    } else if ( song1.isPlaying() ) {
+    } else if ( song1.position() == song1.length()-240000 ) {
       song1.rewind();
       song1.play();
     } else {
       song1.play();
     }
   }
+  //Play-stop
+ 
 }//End mousepressed()

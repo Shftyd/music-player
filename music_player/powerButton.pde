@@ -4,9 +4,9 @@ color red=#FF0000, resetWhite=#FFFFFF, buttonColor;
 float powerButtonX, powerButtonY, powerButtonWidth, powerButtonHeight;
 //
 void powerButton() {
-  powerButtonX=displayWidth*29/30; 
+  powerButtonX=displayWidth*25/30; 
   powerButtonY=displayHeight*0;
-  powerButtonWidth=displayHeight*1/15;
+  powerButtonWidth=displayHeight*5/10;
   powerButtonHeight=displayHeight*1/15;
   rect(powerButtonX, powerButtonY, powerButtonWidth, powerButtonHeight);
 }// Emd powerbutton
