@@ -24,7 +24,7 @@ void textSetup() {
 }//End textSetup()
 
 //Code to be repeated instead of copied and pasted
-void textCode(String powerButton, int size, float powerButtonX, float powerButtonY, float powerButtonWidth, float powerButtonHeight) {
+void textCode(String string, int size, float powerButtonX, float powerButtonY, float powerButtonWidth, float powerButtonHeight) {
   fill(black); //Ink, hexidecimal copied from Color Selector
   textAlign (CENTER, CENTER); //Align X&Y, see Processing.org / Reference
   //Values: [LEFT | CENTER | RIGHT] & [TOP | CENTER | BOTTOM | BASELINE]

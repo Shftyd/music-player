@@ -1,12 +1,12 @@
 //Global variables
-String powerButton = "press me daddy";
+String string = "press me daddy";
 color red=#FF0000, resetWhite=#FFFFFF, buttonColor;
 float powerButtonX, powerButtonY, powerButtonWidth, powerButtonHeight;
 //
 void powerButton() {
-  powerButtonX=displayWidth*25/30; 
+  powerButtonX=displayWidth*0; 
   powerButtonY=displayHeight*0;
-  powerButtonWidth=displayHeight*5/10;
+  powerButtonWidth=displayHeight*10;
   powerButtonHeight=displayHeight*1/15;
   rect(powerButtonX, powerButtonY, powerButtonWidth, powerButtonHeight);
 }// Emd powerbutton
@@ -24,7 +24,7 @@ void powerButtonDraw() {
     buttonColor=red;
     holverOverButtonFill();
   }
-  textCode(powerButton,15, powerButtonX, powerButtonY, powerButtonWidth, powerButtonHeight);
+  textCode(string,55, powerButtonX, powerButtonY, powerButtonWidth, powerButtonHeight);
   //text
 }//End powerButtonDraw()
 

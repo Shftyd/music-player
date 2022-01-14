@@ -16,8 +16,9 @@ void setup() {
   textSetup();
   playPauseSetup();
   fastForwardSetup();
-  fastForwardSetup();
+  fastRewindSetup();
   muteSetup();
+  loopSetup();
   //
   minim = new Minim(this);
   song1 = minim.loadFile("music/Minecraft Music 1_12 - Minecraft (calm1.ogg) _MUSIC SELECTION.mp3");
@@ -30,6 +31,7 @@ void draw() {
   fastForwardDraw();
   fastRewindDraw();
   muteDraw();
+  loopdraw();
 }//End draw()
 
 void keyPressed() {
@@ -41,17 +43,9 @@ void mousePressed() {
   fastForwardMousePressed();
   fastRewindMousePressed();
   muteMousePressed();
+  loopMousePressed();
   //playpause
-  if (mousePressed) {
-    if (song1.isPlaying() ) {
-      song1.pause();
-    } else if ( song1.position() == song1.length()-240000 ) {
-      song1.rewind();
-      song1.play();
-    } else {
-      song1.play();
-    }
-  }
+
   //Play-stop
  
 }//End mousepressed()
