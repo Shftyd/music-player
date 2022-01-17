@@ -14,7 +14,7 @@ void playPauseDraw() {
 
 void playPauseMousePressed() {
   if (mouseX>playPauseX && mouseX<playPauseX+playPauseWidth && mouseY>playPauseY && mouseY< playPauseY+playPauseHeight) {
-    if ( song1.isPlaying() ) {
+    if ( song[currentSong].isPlaying() ) {
       song1.pause();
     } else if ( song1.position() >= song1.length()-3000 ) {
       song1.pause();
