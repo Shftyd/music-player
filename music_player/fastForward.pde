@@ -12,6 +12,6 @@ void fastForwardDraw() {
 }
 
 void fastForwardMousePressed() {
-  if (mouseX>fastForwardX && mouseX<fastForwardX+fastForwardWidth && mouseY>fastForwardY && mouseY< fastForwardY+fastForwardHeight) song1.skip(3000);
+  if (mouseX>fastForwardX && mouseX<fastForwardX+fastForwardWidth && mouseY>fastForwardY && mouseY< fastForwardY+fastForwardHeight) song[currentSong].skip(3000);
   
 }

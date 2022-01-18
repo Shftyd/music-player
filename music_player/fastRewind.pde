@@ -11,6 +11,6 @@ void fastRewindDraw() {
 }
 
 void fastRewindMousePressed() {
-  if (mouseX>fastRewindX && mouseX<fastRewindX+fastRewindWidth && mouseY>fastRewindY && mouseY< fastRewindY+fastRewindHeight) song1.skip(-3000);
+  if (mouseX>fastRewindX && mouseX<fastRewindX+fastRewindWidth && mouseY>fastRewindY && mouseY< fastRewindY+fastRewindHeight) song[currentSong].skip(-3000);
   
 }

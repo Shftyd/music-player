@@ -15,12 +15,12 @@ void playPauseDraw() {
 void playPauseMousePressed() {
   if (mouseX>playPauseX && mouseX<playPauseX+playPauseWidth && mouseY>playPauseY && mouseY< playPauseY+playPauseHeight) {
     if ( song[currentSong].isPlaying() ) {
-      song1.pause();
-    } else if ( song1.position() >= song1.length()-3000 ) {
-      song1.pause();
-      song1.rewind();
+      song[currentSong].pause();
+    } else if ( song[currentSong].position() >= song[currentSong].length()-3000 ) {
+      song[currentSong].pause();
+      song[currentSong].rewind();
     } else {
-      song1.play();
+      song[currentSong].play();
     }
   }
 }

@@ -12,5 +12,5 @@ void loopdraw() {
 
 void loopMousePressed() {
   int loopIntNum = 2;
-  if (mouseX>loopX && mouseX<loopX+loopWidth && mouseY>loopY && mouseY< loopY+loopHeight) song1.loop(loopIntNum);
+  if (mouseX>loopX && mouseX<loopX+loopWidth && mouseY>loopY && mouseY< loopY+loopHeight) song[currentSong].loop(loopIntNum);
 }

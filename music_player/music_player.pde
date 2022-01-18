@@ -15,12 +15,14 @@ int currentSong = numberOfSongs - numberOfSongs; //current song is 0
 void setup() {
   fullScreen();
   population();
-  textSetup();
+  //textSetup();
   playPauseSetup();
   fastForwardSetup();
   fastRewindSetup();
   muteSetup();
   loopSetup();
+  nextSongSetup();
+  previousSongSetup();
   //
   minim = new Minim(this);
  song[currentSong] = minim.loadFile("music/Minecraft Music 1_12 - Minecraft (calm1.ogg) _MUSIC SELECTION.mp3");
@@ -39,6 +41,8 @@ void draw() {
   fastRewindDraw();
   muteDraw();
   loopdraw();
+  nextSongDraw();
+  previousSongDraw();
 }//End draw()
 
 void keyPressed() {
@@ -51,6 +55,8 @@ void mousePressed() {
   fastRewindMousePressed();
   muteMousePressed();
   loopMousePressed();
+  nextSongMousePressed();
+  previousSongMousePressed();
   //playpause
 
   //Play-stop

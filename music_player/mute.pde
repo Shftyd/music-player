@@ -11,5 +11,5 @@ void muteDraw() {
 }
 
 void muteMousePressed() {
-  if (mouseX>muteX && mouseX<muteX+muteWidth && mouseY>muteY && mouseY< muteY+muteHeight) {if (song1.isMuted() ) {song1.unmute();} else {song1.mute();}}
+  if (mouseX>muteX && mouseX<muteX+muteWidth && mouseY>muteY && mouseY< muteY+muteHeight) {if (song[currentSong].isMuted() ) {song[currentSong].unmute();} else {song[currentSong].mute();}}
 }
