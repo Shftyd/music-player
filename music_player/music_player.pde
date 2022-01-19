@@ -15,7 +15,7 @@ int currentSong = numberOfSongs - numberOfSongs; //current song is 0
 void setup() {
   fullScreen();
   population();
-  //textSetup();
+  textSetup();
   playPauseSetup();
   fastForwardSetup();
   fastRewindSetup();

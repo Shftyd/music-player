@@ -4,6 +4,7 @@ color red=#FF0000, resetWhite=#FFFFFF, buttonColor;
 float powerButtonX, powerButtonY, powerButtonWidth, powerButtonHeight;
 //
 void powerButton() {
+  textSetup();
   powerButtonX=displayWidth*0; 
   powerButtonY=displayHeight*0;
   powerButtonWidth=displayHeight*10;
