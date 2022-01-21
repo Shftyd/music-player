@@ -15,10 +15,14 @@ void nextSongMousePressed() {
    if ( song[currentSong].isPlaying() ) {
    song[currentSong].pause();
    song[currentSong].rewind();
-   currentSong ++;
+    //
+   arrayFixError();
+   ///
    song[currentSong].play();
    } else {
    song[currentSong].rewind();
-   currentSong ++;}
+    //
+   arrayFixError();
+   }
   }
 }

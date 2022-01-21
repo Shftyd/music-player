@@ -25,14 +25,14 @@ void textSetup() {
 
 //Code to be repeated instead of copied and pasted
 void textCode(String string, int size, float powerButtonX, float powerButtonY, float powerButtonWidth, float powerButtonHeight) {
-  fill(black); //Ink, hexidecimal copied from Color Selector
-  textAlign (CENTER, CENTER); //Align X&Y, see Processing.org / Reference
+  //fill(black); //Ink, hexidecimal copied from Color Selector
+ // textAlign (CENTER, CENTER); //Align X&Y, see Processing.org / Reference
   //Values: [LEFT | CENTER | RIGHT] & [TOP | CENTER | BOTTOM | BASELINE]
-  textFont(font, size); //Change the number until it fits, largest font size
+ // textFont(font, size); //Change the number until it fits, largest font size
   //textFont() has option to combine font declaration with textSize()
   //Drawing Text
-  text(powerButtonX, powerButtonY, powerButtonWidth, powerButtonHeight);
-  fill(white); //reset
+ text(powerButtonX, powerButtonY, powerButtonWidth, powerButtonHeight);
+ // fill(white); //reset
 }//End textCode()
 
 /* Code from Text-Lesson to copy above

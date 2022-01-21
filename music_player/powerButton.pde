@@ -25,7 +25,7 @@ void powerButtonDraw() {
     buttonColor=red;
     holverOverButtonFill();
   }
-  textCode(string,55, powerButtonX, powerButtonY, powerButtonWidth, powerButtonHeight);
+ textCode(string,55, powerButtonX, powerButtonY, powerButtonWidth, powerButtonHeight);
   //text
 }//End powerButtonDraw()
 

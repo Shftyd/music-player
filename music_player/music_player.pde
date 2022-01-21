@@ -57,8 +57,4 @@ void mousePressed() {
   loopMousePressed();
   nextSongMousePressed();
   previousSongMousePressed();
-  //playpause
-
-  //Play-stop
- 
-}//End mousepressed()
+ }//End mousepressed()
