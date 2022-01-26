@@ -17,16 +17,16 @@ void previousSongMousePressed() {
    song[currentSong].rewind();
    
     //
-   arrayFixError();
+   arrayFixError1();
    //
 
    song[currentSong].play(); 
    } else {
   song[currentSong].  rewind();
-  arrayFixError();
+  arrayFixError1();
 
     //
-   arrayFixError();
+   arrayFixError1();
    //
    
    

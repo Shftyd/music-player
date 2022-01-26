@@ -1,7 +1,7 @@
 float muteX, muteY, muteWidth, muteHeight;
 void muteSetup() {
-  muteX =displayWidth*24/30;
-  muteY =displayHeight*3/4;
+  muteX =displayWidth*26/30;
+  muteY =displayHeight*8/10;
   muteWidth =displayWidth*1/20;
   muteHeight =displayHeight*1/10;
 }

@@ -1,7 +1,7 @@
 float loopX, loopY, loopWidth, loopHeight;
 void loopSetup() {
-  loopX =displayWidth*26/30;
-  loopY =displayHeight*3/4;
+  loopX =displayWidth*28/30;
+  loopY =displayHeight*8/10;
   loopWidth =displayWidth*1/20;
   loopHeight =displayHeight*1/10;
 }
